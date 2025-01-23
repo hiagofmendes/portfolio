@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
+import withMT from "@material-tailwind/react/utils/withMT";
 
-export default {
+export default withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        baimj: ["Bai Jamjuree"],
+        baumans: ["Baumans"],
+        roboto: ["Roboto"],
+        popp: ["Poppins"],
+        mono: ["Mono"],
+        sans: ["Sans"],
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+});
