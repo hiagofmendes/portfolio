@@ -2,7 +2,10 @@ import { servicesCards } from "../data/data";
 
 export default function ServicesComponent() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32" id="services">
+    <div
+      className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32"
+      id="services"
+    >
       {/* <img
         alt=""
         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
@@ -28,13 +31,14 @@ export default function ServicesComponent() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mx-auto max-w-7xl lg:mx-0 w-full">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl text-center w-full">
+          <h2 className="text-5xl font-semibold tracking-tight text-gray-50 sm:text-7xl text-center w-full">
             Serviços
           </h2>
-          <p className="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat.
+          <p className="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
+            Oferecemos soluções completas de desenvolvimento web e mobile para
+            criar aplicações modernas, responsivas e escaláveis. Nossas
+            tecnologias incluem frameworks e linguagens robustas para atender às
+            suas necessidades específicas.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
@@ -48,7 +52,7 @@ export default function ServicesComponent() {
                 className="h-7 w-5 flex-none text-indigo-400"
               />
               <div className="text-base/7">
-                <h3 className="font-semibold text-white">
+                <h3 className="font-semibold text-gray-50">
                   {servicesCards.name}
                 </h3>
                 <p className="mt-2 text-gray-300">

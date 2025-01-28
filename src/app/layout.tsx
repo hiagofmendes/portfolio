@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio",
+  title: "SX Tech",
+  description: "Site SX Tech",
 };
 
 export default function RootLayout({
@@ -24,6 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link
+          className=""
+          rel="icon"
+          type="/image/jpg"
+          href="/img/LogoSX.jpg"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

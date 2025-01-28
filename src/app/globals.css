@@ -8,7 +8,13 @@
 }
 
 html {
+  width: auto;
+  height: auto;
   font-family: var(
     --font-geist-sans
   ); /* Define a fonte principal como padrão */
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to right, #212121 90%, #e5e7eb00 10%);
 }

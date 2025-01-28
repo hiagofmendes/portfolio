@@ -1,8 +1,11 @@
 import {
-  LifebuoyIcon,
-  NewspaperIcon,
-  PhoneIcon,
-} from "@heroicons/react/20/solid";
+  FaDatabase,
+  FaCode,
+  FaDesktop,
+  FaMobile,
+  FaServer,
+  FaLightbulb,
+} from "react-icons/fa";
 
 export const skillsData = [
   {
@@ -58,39 +61,39 @@ export const skillsData = [
 
 export const servicesCards = [
   {
-    name: "Sales",
+    name: "Desenvolvimento Web",
     description:
-      "Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.",
-    icon: PhoneIcon,
+      "Criação de sites e sistemas responsivos, utilizando frameworks modernos como React e Vue para garantir a melhor experiência do usuário e performance.",
+    icon: FaDesktop,
   },
   {
-    name: "Technical Support",
+    name: "Aplicativos Mobile",
     description:
-      "Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.",
-    icon: LifebuoyIcon,
+      "Desenvolvimento de aplicativos nativos e híbridos com React Native, garantindo compatibilidade com Android e iOS, além de um design intuitivo.",
+    icon: FaMobile,
   },
   {
-    name: "Media Inquiries",
+    name: "Backend e APIs",
     description:
-      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
-    icon: NewspaperIcon,
+      "Soluções backend escaláveis e seguras com Node.js, incluindo integração de APIs para conectar aplicações a serviços externos.",
+    icon: FaServer,
   },
   {
-    name: "Teste",
+    name: "Sistemas Personalizados",
     description:
-      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
-    icon: NewspaperIcon,
+      "Desenvolvimento de sistemas personalizados com TypeScript e JavaScript para atender a demandas específicas do seu negócio.",
+    icon: FaCode,
   },
   {
-    name: "Teste2",
+    name: "Consultoria e Otimização",
     description:
-      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
-    icon: NewspaperIcon,
+      "Consultoria para otimização de aplicações existentes, reduzindo custos e melhorando a eficiência do seu sistema.",
+    icon: FaLightbulb,
   },
   {
-    name: "Media",
+    name: "Gerenciamento e Integração de Bancos de Dados",
     description:
-      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
-    icon: NewspaperIcon,
+      "Oferecemos soluções completas para armazenamento seguro e eficiente de dados, com suporte a sistemas modernos e escaláveis.",
+    icon: FaDatabase,
   },
 ];

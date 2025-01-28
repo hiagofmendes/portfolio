@@ -20,10 +20,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   description,
 }) => {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full rounded-none">
       <img src={imageUrl} alt={title} className="h-full w-full object-cover" />
 
-      <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75" id="projects">
+      <div
+        className="absolute inset-0 grid h-full w-full place-items-center bg-black/50"
+        id="projects"
+      >
         <div className="w-3/4 text-center md:w-2/4">
           <Typography
             variant="h1"
@@ -42,7 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex justify-center gap-2">
             <Button
               size="sm"
-              className="hover:scale-110 bg-purple-600 font-bold shadow-lg shadow-gray-600 text-gray-50 font-baimj flex items-center gap-1 p-2"
+              className="hover:scale-110 bg-purple-600 font-bold text-gray-50 font-baimj flex items-center gap-1 p-2"
             >
               Github <PiGithubLogoFill className="text-xl uppercase" />
             </Button>
@@ -63,8 +66,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 export default function SkillsComponent() {
   return (
     <Carousel
-      className="rounded-xl h-screen md:h-auto lg:h-[500px] bg-gray-900"
-      navigation={({ setActiveIndex , activeIndex, length }) => (
+      className="rounded-none h-screen md:h-auto lg:h-[500px] bg-gray-900"
+      navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
