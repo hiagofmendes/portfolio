@@ -6,7 +6,7 @@ import { skillsData } from "../data/data";
 import { fadeIn } from "../variants";
 
 import { PiGithubLogoFill, PiEyeBold } from "react-icons/pi";
-import { Typography, Button, Carousel } from "@material-tailwind/react";
+import { Typography, Button, Carousel } from "@material-tailwind/react/";
 
 interface HeroSectionProps {
   imageUrl: string;
@@ -29,9 +29,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       >
         <div className="w-3/4 text-center md:w-2/4">
           <Typography
+            placeholder=""
             variant="h1"
             color="white"
             className="mb-4 text-3xl md:text-4xl lg:text-5xl font-baimj"
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
           >
             {title}
           </Typography>
@@ -39,6 +42,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             variant="lead"
             color="white"
             className="mb-12 opacity-80 font-roboto text-sm md:text-base"
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
           >
             {description}
           </Typography>
@@ -46,6 +52,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <Button
               size="sm"
               className="hover:scale-110 bg-purple-600 font-bold text-gray-50 font-baimj flex items-center gap-1 p-2"
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               Github <PiGithubLogoFill className="text-xl uppercase" />
             </Button>
@@ -54,6 +63,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               color="white"
               variant="text"
               className="hover:scale-110 font-bold border-purple-600 border-2 font-baimj text-purple-600 p-2 flex items-center gap-1"
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               Preview <PiEyeBold className="text-xl" />
             </Button>
@@ -80,6 +92,9 @@ export default function SkillsComponent() {
           ))}
         </div>
       )}
+      placeholder={undefined}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
     >
       <HeroSection
         imageUrl="https://images.unsplash.com/photo-1535979014625-490762ceb2ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"

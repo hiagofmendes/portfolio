@@ -31,7 +31,7 @@ export default function HeadeComponent() {
           </div>
           <div></div>
         </div>
-        <div className="mr-0 pt-4 lg:max-w-2xl lg:pl-8 lg:pr-0 pb-2 flex-row flex w-full justify-end lg:justify-normal">
+        <div className="mr-0 pt-4 lg:max-w-2xl lg:pl-8 lg:pr-0 pb-2 flex-row flex w-full justify-end items-center lg:justify-normal">
           <nav aria-label="Global" className="flex items-center justify-end">
             <button
               type="button"

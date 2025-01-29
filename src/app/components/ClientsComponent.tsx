@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ClientsComponent() {
   return (
     <div className="h-full w-full bg-gray-900 py-24 flex flex-col relative isolate overflow-hidden">
@@ -23,39 +25,39 @@ export default function ClientsComponent() {
         Clientes
       </h2>
       <div className="flex flex-wrap gap-8 mx-auto px-6 lg:px-8 pt-12 max-w-full justify-center">
-        <img
+        <Image
           alt="Client1"
           src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg"
-          //   width={158}
-          //   height={48}
+          height={48}
+          width={158}
           className="h-12 lg:h-16 w-auto object-contain"
         />
-        <img
+        <Image
           alt="Client2"
           src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg"
-          //   width={158}
-          //   height={48}
+          height={48}
+          width={158}
           className="h-12 lg:h-16 w-auto object-contain"
         />
-        <img
+        <Image
           alt="Client3"
           src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg"
-          //   width={158}
-          //   height={48}
+          height={48}
+          width={158}
           className="h-12 lg:h-16 w-auto object-contain"
         />
-        <img
+        <Image
           alt="Client4"
           src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg"
-          //   width={158}
-          //   height={48}
+          height={48}
+          width={158}
           className="h-12 lg:h-16 w-auto object-contain"
         />
-        <img
+        <Image
           alt="Client5"
           src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg"
-          //   width={158}
-          //   height={48}
+          height={48}
+          width={158}
           className="h-12 lg:h-16 w-auto object-contain"
         />
       </div>
